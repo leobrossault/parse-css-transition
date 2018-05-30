@@ -1,11 +1,11 @@
-const toMillies = require('./to-millies');
+var toMillies = require('./to-millies');
 
 function isTime(value) {
   return /^-?(0?\.)?\d+m?s$/.test(value);
 }
 
 function parseSingleTransition(transition) {
-  const [
+  var [
     name,
     duration,
     timingFunctionOrDelay,
